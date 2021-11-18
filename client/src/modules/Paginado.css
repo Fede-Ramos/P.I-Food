@@ -1,0 +1,22 @@
+.paginado {
+    justify-content: center;
+    display: flex;
+  }
+  .paginado a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+ 
+  }
+
+  .paginado a:hover:not(.activo){
+    background-color: gray;
+   
+  }
+
+
+.pages {
+    background: crimson;
+    border-radius: 25px;
+    
+}

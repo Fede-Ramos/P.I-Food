@@ -1,0 +1,25 @@
+
+.sort{
+display: grid;
+justify-content: space-evenly;
+margin-bottom: 20px;
+background: rgba(105, 105, 105, 0.753);
+font-size: 25px;
+
+}
+
+.sort{
+    width: 20%;
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 40%;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

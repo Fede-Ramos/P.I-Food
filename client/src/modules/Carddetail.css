@@ -1,0 +1,12 @@
+.detail {
+    background: rgba(105, 105, 105, 0.719);
+    border-radius: 25px;
+    font-size: 17px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+img {
+    max-width: 300px;
+    border-radius: 25px;
+}
