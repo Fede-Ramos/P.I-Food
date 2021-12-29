@@ -97,6 +97,11 @@ __Pagina inicial__: deben armar una landing page con
 - [ ] Alguna imagen de fondo representativa al proyecto
 - [ ] Botón para ingresar al home (`Ruta principal`)
 
+<p align="center">
+  <img height="200" src="![Food App - Google Chrome 18_11_2021 10_39_16 a  m](https://user-images.githubusercontent.com/87664281/147687616-a8f266d3-9b4c-49b8-bf4b-98a0afc50518.png)
+" />
+</p>
+
 __Ruta principal__: debe contener
 - [ ] Input de búsqueda para encontrar recetas por nombre
 - [ ] Área donde se verá el listado de recetas. Deberá mostrar su:
