@@ -109,6 +109,12 @@ __Ruta de creación de recetas__: debe contener
 - [ ] Posibilidad de seleccionar/agregar uno o más tipos de dietas
 - [ ] Botón/Opción para crear una nueva receta
 
+<p align="center">
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688925-cbf8316d-fb90-430c-ab04-13a650145a7c.png" />
+    
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688990-1c9253be-a39e-4c2d-90e2-84707e9f7ec1.png" />
+</p>
+
 #### Base de datos
 
 El modelo de la base de datos deberá tener las siguientes entidades (Aquellas propiedades marcadas con asterisco deben ser obligatorias):
