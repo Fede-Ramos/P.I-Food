@@ -20,44 +20,6 @@
 
 El proyecto tendrá una duración máxima de tres semanas. En el caso de que completan todas las tareas antes de dicho lapso podrán avisar a su Instructor para coordinar una fecha de presentación del trabajo (DEMO).
 
-## Comenzando
-
- 1. Forkear el repositorio para tener una copia del mismo en sus cuentas
- 2. Clonar el repositorio en sus computadoras para comenzar a trabajar
-
-Tendrán un `boilerplate` con la estructura general tanto del servidor como de cliente.
-
-__IMPORTANTE:__ Es necesario contar minimamente con la última versión estable de Node y NPM. Asegurarse de contar con ella para poder instalar correctamente las dependecias necesarias para correr el proyecto.
-
-Actualmente las versiónes necesarias son:
-
- * __Node__: 12.18.3 o mayor
- * __NPM__: 6.14.16 o mayor
-
-Para verificar que versión tienen instalada:
-
-> node -v
->
-> npm -v
-
-## BoilerPlate
-
-El boilerplate cuenta con dos carpetas: `api` y `client`. En estas carpetas estará el código del back-end y el front-end respectivamente.
-
-En `api` crear un archivo llamado: `.env` que tenga la siguiente forma:
-
-```
-DB_USER=usuariodepostgres
-DB_PASSWORD=passwordDePostgres
-DB_HOST=localhost
-```
-
-Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credenciales para conectarte a postgres. Este archivo va ser ignorado en la subida a github, ya que contiene información sensible (las credenciales).
-
-Adicionalmente será necesario que creen desde psql una base de datos llamada `food`
-
-El contenido de `client` fue creado usando: Create React App.
-
 ## Enunciado
 
 La idea general es crear una aplicación en la cual se puedan ver distintas recetas de comida junto con información relevante de las mismas utilizando la api externa [spoonacular](https://spoonacular.com/food-api) y a partir de ella poder, entre otras cosas:
@@ -111,6 +73,10 @@ __Ruta principal__: debe contener
 - [ ] Botones/Opciones para ordenar tanto ascendentemente como descendentemente las recetas por orden alfabético y por puntuación
 - [ ] Paginado para ir buscando y mostrando las siguientes recetas, 9 recetas por pagina, mostrando las primeros 9 en la primer pagina.
 
+<p align="center">
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688110-4e4513e8-4e39-49d2-8f49-1ab9d2a38a7a.png" />
+</p>
+
 __IMPORTANTE__: Dentro de la Ruta Principal se deben mostrar tanto las recetas traidas desde la API como así también las de la base de datos. Debido a que en la API existen alrededor de 5 mil recetas, por cuestiones de performance pueden tomar la simplificación de obtener y paginar las primeras 100.
 
 __Ruta de detalle de receta__: debe contener
@@ -119,6 +85,19 @@ __Ruta de detalle de receta__: debe contener
 - [ ] Puntuación
 - [ ] Nivel de "comida saludable"
 - [ ] Paso a paso
+
+<p align="left">
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688221-3e02ad1e-0b67-49e2-ac10-3ba3eac775f1.png" />
+</p>
+
+<p align="center">
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688337-61793689-35fa-4603-8c5c-1eabfc8059d7.png" />
+</p>
+
+<p align="center">
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688465-825a355b-d182-4625-9ed1-21ba3d6533f6.png" />
+</p>
+
 
 __Ruta de creación de recetas__: debe contener
 - [ ] Un formulario __controlado__ con los siguientes campos
