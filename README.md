@@ -88,13 +88,13 @@ __Ruta de detalle de receta__: debe contener
 
 <p align="left">
   <img height="200" src="https://user-images.githubusercontent.com/87664281/147688221-3e02ad1e-0b67-49e2-ac10-3ba3eac775f1.png" />
-</p>
 
-<p align="center">
+
+ align="center">
   <img height="200" src="https://user-images.githubusercontent.com/87664281/147688337-61793689-35fa-4603-8c5c-1eabfc8059d7.png" />
-</p>
 
-<p align="right">
+
+ align="right">
   <img height="200" src="https://user-images.githubusercontent.com/87664281/147688465-825a355b-d182-4625-9ed1-21ba3d6533f6.png" />
 </p>
 
