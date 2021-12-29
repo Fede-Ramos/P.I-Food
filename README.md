@@ -4,8 +4,10 @@
 
 # Individual Project - Food App
 
-<p align="right">
+<p align="center">
   <img height="200" src="https://user-images.githubusercontent.com/87664281/147689618-ac497e39-be08-43c7-8475-3ef946f7bb90.png" />
+    
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147689952-024dd1b9-a29d-4bb3-9ebb-1bcc6ef676d3.png" />
 </p>
 
 ## Objetivos del Proyecto
@@ -39,10 +41,14 @@ A continuación se detallaran los requerimientos mínimos para la aprobación de
 __IMPORTANTE__: No se permitirá utilizar librerías externas para aplicar estilos a la aplicación. Tendrán que utilizar CSS con algunas de las opciones que vimos en dicha clase (CSS puro, CSS Modules o Styled Components)
 
 #### Tecnologías necesarias:
+- [ ] Javascript
 - [ ] React
 - [ ] Redux
+- [ ] Node
 - [ ] Express
-- [ ] Sequelize - Postgres
+- [ ] Sequelize 
+- [ ] PostgreSQL
+- [ ] CSS
 
 #### Frontend
 
