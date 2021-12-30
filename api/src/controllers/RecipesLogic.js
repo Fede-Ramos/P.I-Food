@@ -1,8 +1,6 @@
-const { Router } = require('express');
 const { Recipe } = require('../db');
 const { DietType } = require('../db');
 const axios = require('axios');
-const router = Router();
 const { API_KEY } = process.env;
 
 
@@ -49,7 +47,7 @@ const getAllRecipes= async () => {
 //----------------------/------------------------------//
 
 
-router.get('/', async (req, res, next) => {
+async function getTodas (req, res, next){
     const { name }= req.query;
     
     try {
@@ -71,12 +69,12 @@ router.get('/', async (req, res, next) => {
         next(error)
     }
       
-});   
+};   
 //                  GET A TODO (BDD + API)!!
 //----------------------/------------------------------//
 
 
-router.get('/:id', async (req, res, next) => {
+async function getId (req, res, next){
     const { id }= req.params;
     try { 
         let dbRecipe;
@@ -109,14 +107,13 @@ router.get('/:id', async (req, res, next) => {
         next(error)
     } 
 
-});
+};
 
 //           GET POR ID (BDD + API)!!
 //-----------------------/--------------------------//
 
 
-module.exports = router;
-
-
-
-
+module.exports = {
+    getTodas,
+     getId 
+};

@@ -1,9 +1,8 @@
-const { Router } = require('express');
-const { Recipe, DietType } = require('../db');
-const router = Router();
+const { Recipe, DietType } = require('../../db');
 
 
-router.post('/', async function(req, res, next){
+
+async function postRecipe(req, res, next){
     let { name, resume, healthScore, healthLevel, steps, diets, image } = req.body;
     try {
         const newRecipe = await Recipe.create({
@@ -24,10 +23,10 @@ router.post('/', async function(req, res, next){
     } catch (error) {
         next(error)
     }
-});
+};
 
 //                POST RECIPE (BDD)!!
 //----------------------/------------------------------//
 
-module.exports = router;
-
+module.exports = {
+    postRecipe };

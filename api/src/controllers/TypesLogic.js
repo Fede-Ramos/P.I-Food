@@ -1,10 +1,7 @@
-const { Router } = require('express');
-const { DietType } = require('../db');
-const router = Router();
+const { DietType } = require('../../db');
 
 
-
- router.get('/', async (req, res, next) => {
+async function getTiposDeDieta(req, res, next){
      const typesOfDiet= ['dairy free', 'vegan', 'gluten free', 'lacto ovo vegetarian', 'pescatarian', 'paleolithic', 'primal', 'fodmap friendly', 'whole30', 'vegetarian'];
 
      try {
@@ -22,8 +19,9 @@ const router = Router();
          next(error)
      }
 
-});
+};
 //                GET TYPES A BDD!!
 //----------------------/------------------------------//
 
-module.exports = router;
+module.exports = {
+    getTiposDeDieta };
