@@ -2,10 +2,12 @@
     <img src='https://static.wixstatic.com/media/85087f_0d84cbeaeb824fca8f7ff18d7c9eaafd~mv2.png/v1/fill/w_160,h_30,al_c,q_85,usm_0.66_1.00_0.01/Logo_completo_Color_1PNG.webp' </img>
 </p>
 
-# Individual Project - Henry Food
+# Individual Project - Food App
 
-<p align="right">
-  <img height="200" src="./cooking.png" />
+<p align="center">
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147689618-ac497e39-be08-43c7-8475-3ef946f7bb90.png" />
+    
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147689952-024dd1b9-a29d-4bb3-9ebb-1bcc6ef676d3.png" />
 </p>
 
 ## Objetivos del Proyecto
@@ -20,44 +22,6 @@
 
 El proyecto tendrá una duración máxima de tres semanas. En el caso de que completan todas las tareas antes de dicho lapso podrán avisar a su Instructor para coordinar una fecha de presentación del trabajo (DEMO).
 
-## Comenzando
-
- 1. Forkear el repositorio para tener una copia del mismo en sus cuentas
- 2. Clonar el repositorio en sus computadoras para comenzar a trabajar
-
-Tendrán un `boilerplate` con la estructura general tanto del servidor como de cliente.
-
-__IMPORTANTE:__ Es necesario contar minimamente con la última versión estable de Node y NPM. Asegurarse de contar con ella para poder instalar correctamente las dependecias necesarias para correr el proyecto.
-
-Actualmente las versiónes necesarias son:
-
- * __Node__: 12.18.3 o mayor
- * __NPM__: 6.14.16 o mayor
-
-Para verificar que versión tienen instalada:
-
-> node -v
->
-> npm -v
-
-## BoilerPlate
-
-El boilerplate cuenta con dos carpetas: `api` y `client`. En estas carpetas estará el código del back-end y el front-end respectivamente.
-
-En `api` crear un archivo llamado: `.env` que tenga la siguiente forma:
-
-```
-DB_USER=usuariodepostgres
-DB_PASSWORD=passwordDePostgres
-DB_HOST=localhost
-```
-
-Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credenciales para conectarte a postgres. Este archivo va ser ignorado en la subida a github, ya que contiene información sensible (las credenciales).
-
-Adicionalmente será necesario que creen desde psql una base de datos llamada `food`
-
-El contenido de `client` fue creado usando: Create React App.
-
 ## Enunciado
 
 La idea general es crear una aplicación en la cual se puedan ver distintas recetas de comida junto con información relevante de las mismas utilizando la api externa [spoonacular](https://spoonacular.com/food-api) y a partir de ella poder, entre otras cosas:
@@ -66,16 +30,9 @@ La idea general es crear una aplicación en la cual se puedan ver distintas rece
   - Filtrarlos / Ordenarlos
   - Crear nuevas recetas propias
 
-__IMPORTANTE__: Para poder utilizar esta API externa es necesario crearse una cuenta para obtener una API Key que luego debera ser incluida en todos los request que hagamos a spoonacular simplemente agregando `?apiKey={YOUR_API_KEY}` al final de cada endpoint. Agregar la clave en el archivo `.env` para que la misma no se suba al repositorio por cuestiones de seguridad y utilizarla desde allí. Por otro lado tienen un límite de requests por día por lo que usenlos con cuidado!
 
 __IMPORTANTE__: Para las funcionalidades de filtrado y ordenamiento NO pueden utilizar los endpoints de la API externa que ya devuelven los resultados filtrados u ordenados sino que deben realizarlo ustedes mismos. En particular alguno de los ordenamientos o filtrados debe si o si realizarse desde el frontend.
 
-### Únicos Endpoints/Flags que pueden utilizar
-
-  * GET https://api.spoonacular.com/recipes/complexSearch
-    - Para obtener mayor información sobre las recetas, como por ejemplo el tipo de dieta deben agregar el flag `&addRecipeInformation=true` a este endpoint
-    - Para los tipos de dieta deben tener en cuenta las propiedades vegetarian, vegan, glutenFree por un lado y también analizar las que se incluyan dentro de la propiedad `diets`
-  * GET https://api.spoonacular.com/recipes/{id}/information
 
 ### Requerimientos mínimos:
 
@@ -84,10 +41,14 @@ A continuación se detallaran los requerimientos mínimos para la aprobación de
 __IMPORTANTE__: No se permitirá utilizar librerías externas para aplicar estilos a la aplicación. Tendrán que utilizar CSS con algunas de las opciones que vimos en dicha clase (CSS puro, CSS Modules o Styled Components)
 
 #### Tecnologías necesarias:
+- [ ] Javascript
 - [ ] React
 - [ ] Redux
+- [ ] Node
 - [ ] Express
-- [ ] Sequelize - Postgres
+- [ ] Sequelize 
+- [ ] PostgreSQL
+- [ ] CSS
 
 #### Frontend
 
@@ -96,6 +57,10 @@ Se debe desarrollar una aplicación de React/Redux que contenga las siguientes p
 __Pagina inicial__: deben armar una landing page con
 - [ ] Alguna imagen de fondo representativa al proyecto
 - [ ] Botón para ingresar al home (`Ruta principal`)
+
+<p align="center">
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147687616-a8f266d3-9b4c-49b8-bf4b-98a0afc50518.png" />
+</p>
 
 __Ruta principal__: debe contener
 - [ ] Input de búsqueda para encontrar recetas por nombre
@@ -107,6 +72,10 @@ __Ruta principal__: debe contener
 - [ ] Botones/Opciones para ordenar tanto ascendentemente como descendentemente las recetas por orden alfabético y por puntuación
 - [ ] Paginado para ir buscando y mostrando las siguientes recetas, 9 recetas por pagina, mostrando las primeros 9 en la primer pagina.
 
+<p align="center">
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688110-4e4513e8-4e39-49d2-8f49-1ab9d2a38a7a.png" />
+</p>
+
 __IMPORTANTE__: Dentro de la Ruta Principal se deben mostrar tanto las recetas traidas desde la API como así también las de la base de datos. Debido a que en la API existen alrededor de 5 mil recetas, por cuestiones de performance pueden tomar la simplificación de obtener y paginar las primeras 100.
 
 __Ruta de detalle de receta__: debe contener
@@ -115,6 +84,19 @@ __Ruta de detalle de receta__: debe contener
 - [ ] Puntuación
 - [ ] Nivel de "comida saludable"
 - [ ] Paso a paso
+
+<p align="center">
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688221-3e02ad1e-0b67-49e2-ac10-3ba3eac775f1.png" />
+
+
+ 
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688337-61793689-35fa-4603-8c5c-1eabfc8059d7.png" />
+
+
+ 
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688465-825a355b-d182-4625-9ed1-21ba3d6533f6.png" />
+</p>
+
 
 __Ruta de creación de recetas__: debe contener
 - [ ] Un formulario __controlado__ con los siguientes campos
@@ -125,6 +107,12 @@ __Ruta de creación de recetas__: debe contener
   - Paso a paso
 - [ ] Posibilidad de seleccionar/agregar uno o más tipos de dietas
 - [ ] Botón/Opción para crear una nueva receta
+
+<p align="center">
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688925-cbf8316d-fb90-430c-ab04-13a650145a7c.png" />
+    
+  <img height="200" src="https://user-images.githubusercontent.com/87664281/147688990-1c9253be-a39e-4c2d-90e2-84707e9f7ec1.png" />
+</p>
 
 #### Base de datos
 
@@ -165,9 +153,3 @@ __IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y pagin
 - [ ] __POST /recipe__:
   - Recibe los datos recolectados desde el formulario controlado de la ruta de creación de recetas por body
   - Crea una receta en la base de datos
-
-
-#### Testing
-- [ ] Al menos tener un componente del frontend con sus tests respectivos
-- [ ] Al menos tener una ruta del backend con sus tests respectivos
-- [ ] Al menos tener un modelo de la base de datos con sus tests respectivos
